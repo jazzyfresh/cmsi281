@@ -1,6 +1,11 @@
 bash
 ====
 
+Awesome tutorials
+-----------------
+https://www.learnenough.com/command-line-tutorial
+
+
 Navigating the file system
 --------------------------
 
