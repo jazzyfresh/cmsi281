@@ -32,9 +32,15 @@ public class Queue {
     }
 
     public String dequeue() {
+        if (head == null) {   // the queue is empty
+            return null;      // so return null
+        }
         Node dequeuedNode = head;
         head = head.next;
         n--;
+        if (head == null) {   // if head is now null
+            tail = null;      // that means the queue has been emptied
+        }                     // and tail should be null as well
         return dequeuedNode.value;
     }
 }
