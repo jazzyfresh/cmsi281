@@ -26,10 +26,12 @@ public class MergeSort {
 
         // Second: Interleave the subarrays:
         //
-        // start with each array's lowest element
-        int arrayIndex = left;
+        // start with each subarray's lowest element
         int leftIndex = left;
         int rightIndex = right;
+        // they will be interleaved into the original array
+        // starting at the left
+        int arrayIndex = left;
 
         // interleave until you run out of elements
         while (leftIndex <= mid && rightIndex <= right) {
