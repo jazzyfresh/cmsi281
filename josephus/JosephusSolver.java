@@ -16,6 +16,6 @@ public class JosephusSolver {
     for (CircularIterator i = linkedList.iterator(); !i.oneElementLeft(); ) {
       i.removeKthElement(k1);
     }
-    assert arrayList.first() == "Rugrat";
+    assert linkedList.first() == "Rugrat";
   }
 }
