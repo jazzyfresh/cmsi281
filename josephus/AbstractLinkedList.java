@@ -3,11 +3,13 @@ public abstract class AbstractLinkedList implements Collectible {
     int n;
 
     public AbstractLinkedList() {
-      first = null;
-      n = 0;
+        first = null;
+        n = 0;
     }
     
     public AbstractLinkedList(String[] elements) {
+        first = null;
+        n = 0;
         for (String s : elements) {
             if (s != null) {
                 // take advantage of your own add() method
