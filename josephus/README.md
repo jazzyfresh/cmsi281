@@ -18,11 +18,15 @@ Already implemented:
  - AbstractArrayList.java, AbstractLinkedList.java: abstract classes with the add(String s) method and the constructors implemented. Your CircularArrayList and CircularLinkedList will inherit from these classes
  - CircularArrayList.java, CircularLinkedList.java: the skeleton of these classes have been written for you, just so you know what the overall structure of the class should look like. You will need to replace the `throw new UnsupportedOperationException()` with your implementation code. Your code will look similar to (but slightly modified from) the basic data structure implementations in class. Remember that this is NOT a Bag, so we don't care about uniqueness at all here.
 
+Your assignment: fill out the skeletons of CircularArrayList and CircularLinkedList
+in order to make the code compile and run JosephusSolver without any errors.
+
 To run:
 ```
 rm *.class                      # clean previous build files
 javac JosephusSolver.java       # build project & compile java files
-java JosephusSolver             # run program, does not take in arguments
+java -ea JosephusSolver             # run program, does not take in arguments
+                                    # the -ea means enable assertions
 ```
 
 
@@ -31,4 +35,14 @@ Recommended:
 * make your tests highly automated (save test cases in variables so you don't manually have to pass in parameters from the command line).
 This makes it easier for you to quickly iterate the process {write tests, write code, run tests, fix code}
 * you can make more static methods in the JosephusSolver class, such as test1, test2, etc to test your data structures funtionality
-* use [assert](http://stackoverflow.com/questions/2758224/what-does-the-java-assert-keyword-do-and-when-should-it-be-used) statements to verify correct results
+* this currently uses [assert](http://stackoverflow.com/questions/2758224/what-does-the-java-assert-keyword-do-and-when-should-it-be-used) statements to verify correct results
+but that means you need to pass in a flag to show when our tests don't pass. another approach
+is to write completely separate tests that print the output and if it was different
+from your expected output
+
+
+
+RECENT FIXES:
+- fixed location and method signatures of the remove() iterator methods and the remove()
+list method; added comments and explanations of different remove methods; also added a
+removeAll() method

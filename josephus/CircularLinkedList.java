@@ -25,6 +25,24 @@ public class CircularLinkedList extends AbstractLinkedList implements CircularCo
         return first.value;
     }
 
+    /** remove(String s):
+     *  removes the first element in the list for which
+     *      element.equals(s)
+     *  is true.
+     */
+    public void remove(String s) {
+        throw new UnsupportedOperationException();
+    }
+
+    /** removeAll(String s):
+     *  removes all elements in the list for which
+     *      element.equals(s)
+     *  is true.
+     */
+    public void removeAll(String s) {
+        throw new UnsupportedOperationException();
+    }
+
     public CircularIterator iterator() {
         return new CircularLinkedListIterator();
     }
@@ -43,11 +61,22 @@ public class CircularLinkedList extends AbstractLinkedList implements CircularCo
             throw new UnsupportedOperationException();
         }
 
-        public void remove(String s) {
+        /** remove():
+         *  removes the last/previous element in the list
+         *  (i.e. removes the element that was returned by the
+         *  most recent call to next())
+         */
+        public void remove() {
             throw new UnsupportedOperationException();
         }
 
-        public String removeKthElement(int k) {
+        /** removeKth(int k):
+         *  iterates through the next k elements and removes
+         *  the kth one. The next call to removeKth would
+         *  start at the node after the removed node.
+         *  (i.e. kthNode.next)
+         */
+        public void removeKthElement(int k) {
             throw new UnsupportedOperationException();
         }
 
