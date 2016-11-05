@@ -45,4 +45,6 @@ from your expected output
 RECENT FIXES:
 - fixed location and method signatures of the remove() iterator methods and the remove()
 list method; added comments and explanations of different remove methods; also added a
-removeAll() method
+removeAll() method.  See commit [22e7938](https://github.com/jazzyfresh/cmsi281/commit/22e7938babb1f31a307f8d474d799f53fa2b09c2) for the change.
+- fix bug in abstract list instantiation for second constructor (the bug was that I forgot to
+initialize any of the instance variables in the second constructor). See commit [c336872](https://github.com/jazzyfresh/cmsi281/commit/c3368720f74e48dbd76f25f092a35cd46c3677e8) for the change.
