@@ -49,3 +49,7 @@ list method; added comments and explanations of different remove methods; also a
 removeAll() method.  See commit [22e7938](https://github.com/jazzyfresh/cmsi281/commit/22e7938babb1f31a307f8d474d799f53fa2b09c2) for the change.
 - fix bug in abstract list instantiation for second constructor (the bug was that I forgot to
 initialize any of the instance variables in the second constructor). See commit [c336872](https://github.com/jazzyfresh/cmsi281/commit/c3368720f74e48dbd76f25f092a35cd46c3677e8) for the change.
+- added "-ea" to java command
+- fixed add method in AbstractArrayList (it didn't set elements = doubleElements)
+- CircularLinkedList adds in list of elements backwards, so doing removeKth until there is one element left
+yields the same puppy as would CircularArrayList.
