@@ -45,6 +45,9 @@ public abstract class AbstractArrayList implements Collectible {
                 doubleElements[i] = elements[i];
             }
 
+            // don't forget to set the instance variable to the new array!
+            elements = doubleElements;
+
             // ...and then you can add the new element like normal
             elements[size] = s;         
             size++;
