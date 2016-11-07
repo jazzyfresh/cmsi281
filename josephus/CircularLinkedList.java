@@ -76,7 +76,7 @@ public class CircularLinkedList extends AbstractLinkedList implements CircularCo
          *  start at the node after the removed node.
          *  (i.e. kthNode.next)
          */
-        public void removeKthElement(int k) {
+        public String removeKthElement(int k) {
             throw new UnsupportedOperationException();
         }
 

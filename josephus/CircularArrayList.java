@@ -74,7 +74,8 @@ public class CircularArrayList extends AbstractArrayList implements CircularColl
          *  iterates through the next k elements and removes
          *  the kth one. The next call to removeKth would
          *  start at the node after the removed node.
-         *  (i.e. kthNode.next)
+         *  (i.e. elements[kthElementIndex] because you've shifted
+         *  everything over)
          */
         public String removeKthElement(int k) {
             throw new UnsupportedOperationException();
