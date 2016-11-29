@@ -53,3 +53,6 @@ initialize any of the instance variables in the second constructor). See commit 
 - fixed add method in AbstractArrayList (it didn't set elements = doubleElements)
 - CircularLinkedList adds in list of elements backwards, so doing removeKth until there is one element left
 yields the same puppy as would CircularArrayList.
+- changed removeKth return type to String for CircularLinkedListIterator to match the CircularArrayListIterator,
+also fixed removeKth comment in CircularArrayListIterator See commit [052f6de](https://github.com/jazzyfresh/cmsi281/commit/c3368720f74e48dbd76f25f092a35cd46c3677e8)
+
