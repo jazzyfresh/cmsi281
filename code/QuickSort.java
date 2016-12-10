@@ -26,7 +26,7 @@ class QuickSort {
 
     // scan through the subarray moving elements to
     // either side of the pivot
-    while (j < high - 1) {
+    while (j <= high - 1) {
       if (array[j] <= pivot) {
         // swap array[i] with array[j]
         temp = array[i];
